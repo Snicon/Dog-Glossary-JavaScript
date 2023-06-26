@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1>Dog Glossary</h1>
+    </header>
+    <button id="button-random-dog" onclick="getRandomImage()">Show Random Dog</button>
+    <input type="text" placeholder="Enter a breed" id="input-breed">
+    <button id="button-show-breed" onclick="getBreedImage(document.getElementById('input-breed').value.toLowerCase())">Show Breed</button>
+    <button id="button-show-sub-breed" onclick="getSubBreeds(document.getElementById('input-breed').value.toLowerCase())">Show Sub-Breed</button>
+    <button id="button-show-all" onclick="getAllBreeds()">Show All Breeds</button>
+    <div id="content">
+
+    </div>
+</body>
+</html>
